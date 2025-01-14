@@ -1,0 +1,3 @@
+charges:
+    path: /v1/payments/{paymentProvider}
+    controller: App\Controller\PaymentController::processPayment
