@@ -65,7 +65,7 @@ Replace `{aci|shift4}` with either `aci` or `shift4` to select the external syst
 
 2. **Run the Docker container**:
     ```bash
-    docker run -d -p 8083:8000 --name metricalo_assignment-container metricalo_assignment
+    docker run -d -p 8083:8080 --name metricalo_assignment-container metricalo_assignment
     ```
     The API will be accessible at `http://localhost:8083`.
 
