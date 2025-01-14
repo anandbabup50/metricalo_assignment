@@ -92,3 +92,12 @@ Replace `{aci|shift4}` with either `aci` or `shift4` to select the external syst
     "currency": "EUR",
     "card_bin": "411111"
 }
+
+## Testing
+
+To test the functionality of the API and CLI, you can create unit tests, functional tests, and integration tests using Symfony's built-in testing capabilities.  
+
+To run the tests, you can use PHPUnit:
+
+```bash
+php bin/phpunit
