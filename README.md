@@ -92,6 +92,26 @@ Replace `{aci|shift4}` with either `aci` or `shift4` to select the external syst
     "currency": "EUR",
     "card_bin": "411111"
 }
+```
+## CLI Command
+- **Command** `bin/console app:payments {aci|shift4}`
+- **Parameters**
+    - `amount: Transaction amount`
+    - `currency: Currency code`
+    - `card-number: Card number`
+    - `card-exp-year: Expiration year`
+    - `card-exp-month: Expiration month`
+    - `card-cvv: CVV`
+- **Example**
+    - **Command**  `php bin/console app:payments aci 100 EUR 4111111111111111 2025 12 123`
+    - **Output** ```
+{
+    "transaction_id": "8ac7a4a19463eccf019465125ad54760",
+    "date": "2025-01-14 13:48:09",
+    "amount": 100,
+    "currency": "EUR",
+    "card_bin": "420000"
+}```
 
 ## Testing
 
@@ -100,4 +120,5 @@ To test the functionality of the API and CLI, you can create unit tests, functio
 To run the tests, you can use PHPUnit:
 
 ```bash
-php bin/phpunit
+php bin/phpunit 
+```
